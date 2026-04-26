@@ -1,8 +1,10 @@
 package edu.sandiego.comp305;
 
 public class StringUtils {
-    public static String reverseString(String inputString){
-        String reversed = new StringBuilder(inputString).reverse().toString();
-        return reversed;
+    private StringUtils(){
+    }
+
+    public static String reverseString(final String inputString){
+        return new StringBuilder(inputString).reverse().toString();
     }
 }
